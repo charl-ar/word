@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+      
+  <modelVersion>4.0.0</modelVersion>
+      
+  <groupId>org.example</groupId>
+      
+  <artifactId>word2.0</artifactId>
+      
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+      
+  <properties>
+            
+    <maven.compiler.source>17</maven.compiler.source>
+            
+    <maven.compiler.target>17</maven.compiler.target>
+            
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        
+  </properties>
+  <dependencies>
+    <!-- MySQL驱动 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.25</version>
+    </dependency>
+    <!-- Servlet API，解决所有servlet报红 -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <!-- provided：编译IDEA用，运行时Tomcat自带，避免冲突 -->
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+  </dependencies>
+  
+</project>
